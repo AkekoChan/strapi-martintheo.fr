@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "services",
   "info": {
-    "singularName": "categorie",
-    "pluralName": "categories",
-    "displayName": "categorie",
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
     "description": ""
   },
   "options": {
@@ -17,11 +17,11 @@
       "required": true,
       "unique": true
     },
-    "posts": {
+    "projects": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::post.post",
-      "mappedBy": "categories"
+      "target": "api::project.project",
+      "mappedBy": "services"
     }
   }
 }
