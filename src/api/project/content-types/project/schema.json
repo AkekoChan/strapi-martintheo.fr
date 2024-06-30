@@ -35,18 +35,32 @@
       "required": true
     },
     "medias": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "services": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::service.service",
       "inversedBy": "projects"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "github": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

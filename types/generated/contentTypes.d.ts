@@ -882,6 +882,9 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'manyToMany',
       'api::service.service'
     >;
+    thumbnail: Attribute.Media & Attribute.Required;
+    github: Attribute.String;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
